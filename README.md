@@ -1,11 +1,13 @@
-# My Student Portal — CSIT248 Week Project
+# Dr.Nourchen_LabSix
+
+## My Student Portal — CSIT248 Week Project
 
 ## Student values
 
 These are the values used in this version. **Replace the enrolment number with your actual enrolment number before submitting.**
 
-- Student name: Artyom
-- Enrolment number: 5831
+- Student name: Artemiy Kunetsov
+- Enrolment number: A85204925050
 - D1 = 5
 - D2 = 8
 - D3 = 3
