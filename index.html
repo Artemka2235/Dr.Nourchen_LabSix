@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Student Portal — Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <header>
+        <p class="eyebrow">CSIT248 · Web Technologies</p>
+        <h1>My Student Portal</h1>
+        <p class="muted">Register a student to view their marks board.</p>
+      </header>
+
+      <form id="registrationForm" novalidate>
+        <div class="grid">
+          <div class="field">
+            <label for="fullName">Full name</label>
+            <input id="fullName" name="fullName" type="text" autocomplete="name">
+            <small class="error" id="fullNameError"></small>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email">
+            <small class="error" id="emailError"></small>
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="9 digits">
+            <small class="error" id="phoneError"></small>
+          </div>
+
+          <div class="field">
+            <label for="city">City</label>
+            <select id="city" name="city">
+              <option value="">Choose your city...</option>
+              <option>Tashkent</option>
+              <option>Samarkand</option>
+              <option>Bukhara</option>
+              <option>Andijan</option>
+              <option>Namangan</option>
+            </select>
+            <small class="error" id="cityError"></small>
+          </div>
+
+          <div class="field">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" autocomplete="new-password">
+            <small class="error" id="passwordError"></small>
+          </div>
+
+          <div class="field">
+            <label for="confirmPassword">Confirm password</label>
+            <input id="confirmPassword" name="confirmPassword" type="password" autocomplete="new-password">
+            <small class="error" id="confirmPasswordError"></small>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button type="submit" class="primary">Register</button>
+          <button type="reset" class="secondary">Clear</button>
+        </div>
+        <p id="formMessage" class="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

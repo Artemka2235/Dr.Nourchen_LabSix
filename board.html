@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Student Portal — Marks Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="card board-card">
+      <header class="board-header">
+        <div>
+          <p class="eyebrow">CSIT248 · Web Technologies</p>
+          <h1>Student Marks Board</h1>
+          <p id="welcome" class="muted">Welcome</p>
+        </div>
+        <button id="backButton" class="secondary" type="button">Back</button>
+      </header>
+
+      <div class="table-wrap">
+        <table id="marksTable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>City</th>
+              <th>Marks</th>
+              <th>Grade</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <p id="boardMessage" class="form-message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
